@@ -1,0 +1,134 @@
+.start-container {
+  position: relative;
+  height: 100vh;
+  background-color: #000026;
+  overflow: hidden;
+  padding-top: 20px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.background-imgs {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.img-left,
+.img-right,
+.img-center {
+  position: absolute;
+  max-width: 1600px;
+  height: auto;
+}
+
+.img-left {
+  position: absolute;
+  top: 35%;
+  left: -12vw;
+  transform: scale(2.5);
+  max-width: none;
+}
+
+.img-right {
+  position: absolute;
+  top: 37%;
+  right: -10vw;
+  transform: scale(2.5);
+  max-width: none;
+}
+
+.img-center {
+    bottom: 22vh;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.content-section {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;
+}
+
+.content-section h1 {
+  font-size: 48px;
+  font-weight: bold;
+  margin-top: 70px;
+  color: white;
+}
+
+.whyus-paragraph {
+  color: #fff;
+  font-family: Inter, sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 50px;
+  letter-spacing: 4px;
+  width: 80%;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.content-section h3 {
+  font-size: 28px;
+  font-weight: 600;
+  margin-bottom: 12px;
+  color: #ffffff;
+  margin: 1px 0px;
+}
+
+.start-button {
+    margin: 20px 0px;
+    display: flex;
+    width: 220px;
+    height: 48px;
+    padding: 12px 24px;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    border-radius: 20px;
+    border: 1px solid #2564eb;
+    background: #fff;
+    box-shadow: 0px 0px 4px 0px #2564eb;
+    color: var(--text-content-text-button, #0D358C);
+    text-shadow: 0px 0px 2px var(--Interactive-Action-action-primary-default, #2564EB);
+    font-family: Inter, sans-serif;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0.5px;
+  
+    text-decoration: none;
+    transition: all 0.3s ease;
+  }
+  
+  .start-button:hover {
+    background: #2564EB;
+    color: #fff;
+  }
+  @media (max-width: 767px) {
+    .whyus-paragraph{
+      font-size: 15px;
+    }
+    .content-section h1{
+      font-size: 40px;
+    }
+    }
+    @media (min-width: 768px) and (max-width: 1200px) {
+      .start-container{
+        height: 60vh;
+      }
+    }

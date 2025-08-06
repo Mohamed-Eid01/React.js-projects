@@ -1,0 +1,97 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #0b2434;
+}
+
+.main {
+  display: flex;
+  justify-content: center;
+  width: 430px;
+  height: 450px;
+  background-color: #f5f5f5;
+  border-radius: 10px;
+  padding: 34px;
+}
+.main-container {
+  text-align: center;
+}
+
+.main-container h1 {
+  margin-top: 0;
+  font-size: 2.2rem;
+  margin-bottom: 4px;
+}
+.main-container p {
+  color: #585858;
+  font-family: Inter, sans-serif;
+  font-size: 0.95rem;
+  font-weight: 400;
+  line-height: 1.2rem;
+  margin-bottom: 16px;
+  text-align: center;
+}
+.counters-section {
+  margin: 20px 0;
+  display: flex;
+  justify-content: space-between;
+}
+.counters-section span {
+  font-weight: bold;
+  font-size: 18px;
+  padding: 10px 0px;
+}
+.dice-section {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(2, auto);
+  gap: 15px;
+  justify-items: center;
+  align-items: center;
+}
+.diec {
+   height: 50px;
+    width: 50px;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.15);
+    border-radius: 10px;
+    border: none;
+    background-color: white;
+    font-family: Inter, sans-serif;
+    font-size: 1.75rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+.role-btn{
+background-color: #5035ff;
+    border: none;
+    border-radius: 6px;
+    box-shadow: 0 3.2px 7.7px 0 rgba(0, 0, 0, .18);
+    color: #fff;
+    cursor: pointer;
+    height: 40px;
+    margin-top:30px;
+    width: auto;
+    padding: 10px 20px;
+    font-weight: bold;
+    font-size: 20px;
+
+}
+
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}

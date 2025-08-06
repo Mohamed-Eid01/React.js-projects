@@ -1,0 +1,312 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body,
+html {
+  height: 100%;
+}
+
+
+.background {
+  height: 100vh;
+  width: 100vw;
+  background: linear-gradient(243deg, #fff 0%, #739bf2 48.89%, #04122f 126.85%);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo-up {
+  position: absolute;
+  left: 0;
+}
+
+.logo-center {
+  position: absolute;
+  width: 1250px;
+  top: 100px;
+}
+
+.logo-down {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+.container {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.login-card {
+  position: absolute;
+  width: 552px;
+  padding: 40px;
+  background: linear-gradient(
+        to bottom,
+        rgba(255, 255, 255, 0.35),
+        rgba(255, 255, 255, 0.35)
+      )
+      border-box,
+    rgba(255, 255, 255, 0.2) padding-box;
+  backdrop-filter: blur(15px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 4px solid transparent;
+  border-radius: 20px;
+  background-origin: border-box;
+  background-clip: padding-box, border-box;
+  box-sizing: border-box;
+}
+
+.logo-section {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.form-section {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.guido-logo {
+  width: 200px;
+  max-width: 100%;
+}
+
+.title {
+  font-size: 16px;
+  color: #333;
+  margin-bottom: 5px;
+}
+
+.input {
+  width: 100%;
+  padding: 14px 18px;
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.4); 
+  background: rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(5px);
+  font-size: 15px;
+  color: #000;
+  outline: none;
+  transition: border 0.3s ease;
+}
+.input:focus {
+  border: 1px solid #fff;
+  background: rgba(255, 255, 255, 0.4);
+}
+
+.password-wrapper {
+  position: relative;
+}
+
+.password-wrapper .eye-icon {
+  position: absolute;
+  right: 16px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  font-size: 16px;
+  color: #666;
+}
+
+.options {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 13px;
+  color: #333;
+  padding: 0 10px;
+  gap: 55px;
+}
+
+.options input[type="checkbox"] {
+  appearance: none;
+  -webkit-appearance: none;
+  width: 20px;
+  height: 20px;
+  border-radius: 6px;
+  background: rgba(255, 255, 255, 0.25);
+  box-shadow: inset 1px 1px 2px rgba(0, 0, 0, 0.1),
+    inset -1px -1px 2px rgba(255, 255, 255, 0.6),
+    0 0 0 1px rgba(68, 122, 238, 0.6);
+  backdrop-filter: blur(3px);
+  border: 1px solid rgba(68, 122, 238, 0.5);
+  cursor: pointer;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  padding: 4px;
+  flex-shrink: 0;
+  transition: all 0.2s ease;
+  margin: 5px;
+}
+
+.options input[type="checkbox"]:checked::after {
+  content: "✓";
+  color: #447aee;
+  font-size: 13px;
+  font-weight: bold;
+  display: block;
+}
+
+.options label {
+  font-size: 14px;
+  color: #333;
+  display: flex;
+  align-items: center;
+}
+
+.options a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.login-btn {
+  display: flex;
+  height: 48px;
+  padding: 12px 24px;
+  justify-content: center;
+  align-items: center;
+  align-self: stretch;
+  font-size: 16px;
+  color: #fff;
+  cursor: pointer;
+  border: 3px solid transparent;
+  border-radius: 20px;
+  background: #2564eb;
+  background-origin: border-box;
+  background-clip: padding-box, border-box;
+  box-shadow: 0px -4px 4px 0px rgba(0, 0, 0, 0.25) inset,
+    0px 0px 4px 0px #0d358c;
+  transition: background 0.3s ease;
+}
+
+.login-btn:hover {
+  background-color: #0d358c;
+}
+.footer-logo {
+  display: none;
+}
+.bottom-note {
+  margin-top: 12px;
+  font-size: 14px;
+  color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+}
+
+.signup-link {
+  color: #2564eb;
+  text-decoration: underline;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .logo-up,
+  .logo-down {
+    display: none;
+  }
+
+  .logo-center {
+    position: absolute;
+    top: 75px;
+    left: 45%;
+    transform: translateX(-50%);
+    width: 45vw; 
+    max-width: 200px; 
+    height: auto;
+  }
+
+
+  .login-card {
+    width: 90vw;
+    max-width: 430px;
+    padding: 6vw;
+    z-index: 10;
+  }
+
+
+  .guido-logo {
+    width: 45vw;
+    max-width: 180px;
+  }
+
+
+  .title {
+    font-size: 4vw;
+    margin-bottom: 15px;
+  }
+
+
+  .input {
+    font-size: 4vw;
+    padding: 3vw;
+  }
+
+
+  .login-btn {
+    padding: 3.5vw;
+    font-size: 4.5vw;
+  }
+
+
+  .options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    gap: 10px;
+    padding: 0;
+    width: 100%;
+  }
+
+  .options input[type="checkbox"] {
+    width: 4vw;
+    height: 5vw;
+  }
+
+  .options label,
+  .options a {
+    font-size: 4vw;
+    white-space: nowrap;
+  }
+  .footer-logo {
+    display: block;
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 120px;
+    height: auto;
+    opacity: 0.8;
+  }
+}
+@media (min-width: 768px) and (max-width: 1200px) {
+  .logo-center {
+    margin-top: 350px;
+  }
+}
